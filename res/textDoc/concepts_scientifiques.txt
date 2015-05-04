@@ -1,0 +1,25 @@
+	Notre application se base essentiellement sur les lois de la mécanique. Elle contient beaucoup de concepts sur le mouvement d’un projectile et les collisions entre deux objets. Pour créer cette application, les cours de mathématiques et de physiques nous seront d’une grande utilité. Par exemple, les théories  de la physique mécanique seront particulièrement importantes dans la réalisation de cette projet. Voici les formules utilisés dans cette application :
+
+	La friction Fmax = Us*Fn 
+	
+	La loi gravitationnelle Fg = G (M*m)/r^2      
+		
+	La quantité de mouvement p = m*v     
+			
+	La cinématique xf = xi + vi*t + 1/2*a*t^2    
+				
+	La 2e loi de Newton F = m*a  
+	
+	Le champ électrique E = densité/2*E0       E0 = 8.85*Math.pow(10, -12)
+	
+	La force électrique = q*E
+	
+	La force d'impulsion J = (-(1 + e)/((1/mA) + (1/mB)))*(Vf - Vi)*N
+
+	   
+La loi physique de la friction joue un rôle important dans ce jeu. En effet, sans la force de frottement, la balle continuera de rouler sans jamais s’arrêter, donc elle sert à réduire la vitesse de la balle et éventuellement l’arrêter.
+Tous les objets subissent la force de la gravité, c’est inévitable. Cette force permet de ramener la balle au sol, produisant une trajectoire parabolique chez les projectiles.
+Les collisions représentent le cœur de ce jeu. Ils seront utiles pour une variété de circonstance. La collision sera nécessaire au moment où le curseur (la batte) entre en contact avec la balle pour la faire projeter dans les airs. De plus, la collision permet de faire l’interaction de la balle avec les nombreux éléments du décor et le sol. La quantité de mouvement et l'impulsion sont utiles pour déterminer l'impact des collisions sur le mouvement de la balle.
+La cinématique permet de calculer la position, la vitesse et l’accélération dans le temps afin de pouvoir dessiner la position de la balle dans le jeu.
+La 2e loi de Newton permet d’évaluer le module des forces afin de pouvoir afficher les flèches de force.
+

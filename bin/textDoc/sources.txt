@@ -1,0 +1,136 @@
+«Algorithme externe»
+     -- Méthode de réinitialisation
+     	http://stackoverflow.com/questions/7560285/what-is-the-best-way-to-check-if-a-field-is-final-in-java-using-reflection
+     	http://stackoverflow.com/questions/12361492/java-typeof-primitive-data-types
+     	http://stackoverflow.com/questions/8850951/checking-a-class-type-class-is-equal-to-some-other-class-type
+     	https://docs.oracle.com/javase/tutorial/reflect/member/fieldValues.html
+     
+     -- Méthode de création du monde de jeu
+     	https://www.youtube.com/watch?v=1TFDOT1HiBo&list=PLWms45O3n--54U-22GDqKMRGlXROOZtMx&index=11
+
+«Fichiers audio»
+     -- batHit
+        - Son produit au moment que la balle de baseball entre en contact avec la batte.
+        - https://www.youtube.com/watch?v=_w6D-iXlODg
+        
+     -- grass
+        - Son produit au moment de la collision avec le sol.
+        - Il s'agit d'un fichier audio pour les bruits de pas dans le jeu Minecraft de Mojang, créé par C418.
+        
+     -- Kuroko_no_basket
+        - Music du jeu
+        - https://www.youtube.com/watch?v=vD2D6mDOlGc
+        
+     -- NBA_Sound
+        - Mélodie produit au moment que le bouton «Lancer» est pressé pour les modes de jeu «Standard» et «Libre».
+        - https://www.youtube.com/watch?v=oPV4hTdpuB4&list=PLF98271CC316CC89B
+
+«Fichiers image»
+     -- ground
+        - Texture pour le sol.
+        - Image tirée d’une application extérieure, nommée BuildBox.
+        
+     -- tool_button_clicked
+        - Texture pour le bouton de paramétrage du jeu au moment où le curseur clique sur le bouton.
+     
+     -- tool_button_selected
+        - Texture pour le bouton de paramétrage du jeu au moment où le curseur passe au-dessus du bouton.
+     
+     -- tool_button_unselected
+        - Texture pour le bouton de paramétrage du jeu par défaut.
+        
+     -- trollface
+        - Texture pour la balle trollface
+        
+     -- house1
+     	texture de l'obstacle1
+     
+     -- house2
+     	texture de l'obstacle2
+
+«Fichiers image créés par les développeurs»
+     -- button_clicked
+        - Texture pour les boutons du menu principal au moment où le curseur clique sur le bouton.
+     
+     -- button_selected
+        - Texture pour les boutons au moment où le curseur passe au-dessus du bouton.
+     
+     -- button_unselected
+        - Texture pour les boutons par défaut.
+     
+     -- launch_button_clicked
+        - Texture pour le bouton de lancer du jeu au moment où le curseur clique sur le bouton.
+     
+     -- launch_button_selected
+        - Texture pour le bouton de lancer du jeu au moment où le curseur passe au-dessus du bouton.
+     
+     -- launch_button_unselected
+        - Texture pour le bouton de lancer du jeu par défaut.
+     
+     -- pause_button_clicked
+        - Texture pour le bouton de pause du jeu au moment où le curseur clique sur le bouton.
+     
+     -- pause_button_selected
+        - Texture pour le bouton de pause du jeu au moment où le curseur passe au-dessus du bouton.
+     
+     -- pause_button_unselected
+        - Texture pour le bouton de pause du jeu par défaut.
+        
+     -- type_button_clicked
+        - Texture pour le bouton de type de balle du jeu au moment où le curseur clique sur le bouton.
+        
+     -- type_button_selected
+        - Texture pour le bouton de type de balle du jeu au moment où le curseur passe au-dessus du bouton.
+        
+     -- type_button_unselected
+        - Texture pour le bouton de type de balle du jeu par défaut.
+     
+     -- platform
+        - Image du monde de jeu utilisée au moment où le monde est créé pour la première fois.
+        
+     -- metal_Positive
+        - Texture de la plaque positive.
+        
+     -- metal_Negative
+        - Texture de la plaque négative.
+     
+     -- title
+        - Image du titre du jeu dans le menu principal.
+     
+     -- title_help
+        - Image du titre dans le menu d’aide.
+     
+     -- background_field
+        - Image de fond pour le jeu.
+     
+     -- ball
+        - Image de la balle de baseball.
+        
+     -- KuroBall
+        - Image de la balle rapide/noire de baseball.
+        
+     -- SinusBall
+        - Image de la balle sinusoidale de baseball.
+        
+     -- FrictionBall
+        - Image de la balle collante de baseball.
+        
+     -- ElectricBall
+        - Image de la balle électrique de baseball.
+     
+     -- ball_disabled
+        - Image de la balle de baseball désactivée dans le sélecteur.
+        
+     -- KuroBall_disabled
+        - Image de la balle rapide/noire de baseball désactivée dans le sélecteur.
+        
+     -- SinusBall_disabled
+        - Image de la balle sinusoidale de baseball désactivée dans le sélecteur.
+        
+     -- FrictionBall_disabled
+        - Image de la balle collante de baseball désactivée dans le sélecteur.
+        
+     -- ElectricBall_disabled
+        - Image de la balle électrique de baseball désactivée dans le sélecteur.
+     
+     

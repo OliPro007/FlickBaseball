@@ -1,0 +1,13 @@
+-sourcepath ".\\src"
+-private
+-author
+-source "1.8"
+-splitindex
+-use
+-version
+-doctitle "Documentation de Flick Baseball"
+-d ".\\javadoc"
+application
+gameobject
+gamestate
+util

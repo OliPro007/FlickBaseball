@@ -1,0 +1,39 @@
+Cette application est un jeu éducatif qui permet d'explorer les concepts de physique mécanique et d'électricité ainsi que certaines fonctions mathématiques étant associés au mouvement d'un projectile, plus particulièrement une balle de baseball. L'utilisateur pourra observer le mouvement balistique, la friction, les effets de la collision d'un objet en mouvement contre des objets immobiles de formes diverses et la déviation produite par un champ électrique.
+
+Au lancement de l’application, le menu principal apparaitra et plusieurs options seront à votre disponibilité. Vous pouvez cliquer sur les boutons «mode standard», «mode libre», «option» et «aide». 
+
+«Mode Standard»
+Si vous choisissez le «Mode Standard», vous allez débuter une partie normale. Les règles du jeu sont les suivants :
+     -	Le joueur possède 5 balles au départ pour frapper.
+     -	À chaque fois que le joueur fasse un HOMERUN, il reçoit une balle en bonus.
+     -	Le pointage est calculé à partir de la distance parcourue par la balle après une frappée. Le pointage s’additionne pour toutes nouvelles balles frappées.
+     -	La balle est lancée du côté droit du jeu et possède une vitesse initiale aléatoire. Le type de balle envoyée est également déterminé aléatoirement.
+     -	La partie se termine lorsque le joueur a épuisé toutes les balles à frapper.
+
+«Mode Libre»
+Si vous choisissez le «Mode Libre», vous allez débuter une partie de pratique. Dans ce mode, le joueur peut décider les règles du jeu. Il détient le contrôle des modifications des paramètres du jeu tels que :
+     -	le nombre de balle à frapper
+     -	le type de la balle lancée
+     -	la vitesse de la balle lancée
+     -	la puissance de frappée de la batte
+     -	la puissance des forces de physique (gravité, champ électrique…)
+     -	l’amplitude du rebond de la balle
+     -	le choix du terrain de jeu
+
+«Option»
+Si vous choisissez l’«Option», vous pouvez régler les paramètres de l’interface de l’application à votre préférence. Vous pouvez choisir la résolution de l’écran, ajuster le volume du son et activer les paramètres scientifiques.
+Activer les paramètres scientifiques permet au joueur de visualiser les informations des forces physiques en chiffres et les vecteurs de force.
+
+«Aide»
+Si vous choisissez l’«Aide», vous pouvez lire les informations concernant le fonctionnement et les contrôles du jeu, le développement de l’application et les développeurs. Voici les 5 sections que vous pouvez choisir :
+
+     -	Jeu d’essai   -   Description d'un jeu d'essai qui permet à l'utilisateur de connaitre les capacités actuelles de l'application et donne une description séquentielle à suivre afin de guider l'utilisateur à travers le test qui montre le fonctionnement de l'application.
+
+     -	Instructions complètes   -   Description du but général de l'application et guide détaillé sur le fonctionnement de l'application.
+
+     -	Concepts scientifiques   -   Information sur la théorie et les concepts scientifiques derrière cette application. Cette section inclue également toutes les formules de physiques et mathématiques utilisées dans la réalisation de cette application.
+
+     -	Sources   -   Les sources de tous les images et sons utilisés dans l’application, ainsi que les sources du code emprunté dans des librairies ou d’ailleurs.
+
+     -	À propos   -   Information sur  le numéro de version de l'application, le nom des développeurs, l'année, le nom du collège et du cours.
+
