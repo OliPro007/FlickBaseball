@@ -3,3 +3,5 @@ Pour générer les Javadocs et les publier dans la bonne branche, il faut suivre
 2- Importer le projet de la branche gh-pages,puis renommer le dossier de la branche gh-pages pour javadocs
 3- Lorsqu'on travaille sur le projet, on commit normalement (les codes devront être sur master)
 4- Lorsqu'on génère les javadocs, on entre le chemin vers le dossier de la branche (renommé pour javadoc), puis on commit dans gh-pages
+
+lien: http://stackoverflow.com/questions/11938270/how-i-can-move-javadoc-from-master-branch-to-gh-pages-branch-on-github-using-egi
