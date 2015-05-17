@@ -120,7 +120,7 @@ public abstract class AbstractBall extends GameObject{
 	 */
 	public void update(){
 		timeElapsed += DT;
-		if(timeElapsed >= 20){
+		if(timeElapsed >= 50){
 			for(BallListener listener : REGISTERED_LISTENERS.getListeners(BallListener.class)){
 				listener.resetBall();
 			}
@@ -297,7 +297,7 @@ public abstract class AbstractBall extends GameObject{
 								} else {
 									setVelY(0);
 								}
-								if(sfxIsEnabled)
+								if(sfxIsEnabled && getVelX() != 0)
 									groundSound.play();
 							} else {
 								setY(getY() - 1*getWorldMatrix().getScaleY());

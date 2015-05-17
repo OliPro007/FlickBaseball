@@ -121,6 +121,6 @@ public class Camera {
 	 * @return la limite du monde en x.
 	 */
 	public double getEndOfWorld() {
-		return endOfWorld;
+		return endOfWorld-GamePanel.WIDTH;
 	}
 }

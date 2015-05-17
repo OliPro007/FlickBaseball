@@ -7,6 +7,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import javax.swing.event.EventListenerList;
@@ -38,9 +43,23 @@ public class OptionState implements IGameState {
 	
 	private ArrayList<Component> components;
 	
-	private boolean sfxEnabled = true;
-	private boolean bgmEnabled = true;
-	private boolean infoEnabled = true;
+	private boolean sfxEnabled;
+	private boolean bgmEnabled;
+	private boolean infoEnabled;
+	
+	public OptionState(){
+		try(BufferedReader br = new BufferedReader(new FileReader("FlickBaseball.cfg"))){
+			String str;
+			while((str = br.readLine()) != null){
+				String var = str.substring(0, str.indexOf('='));
+				String val = str.substring(str.indexOf('=')+1);
+				Field field = this.getClass().getDeclaredField(var);
+				field.set(this, Boolean.parseBoolean(val));
+			}
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+	}
 	
 	/**
 	 * Initialise les différentes propriétés du jeu.
@@ -149,6 +168,13 @@ public class OptionState implements IGameState {
 		btnReturn.setBounds(GamePanel.WIDTH-BTN_WIDTH-BTN_SPACING, GamePanel.HEIGHT-BTN_HEIGHT-BTN_SPACING, BTN_WIDTH, BTN_HEIGHT);
 		btnReturn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				try(BufferedWriter bw = new BufferedWriter(new FileWriter("FlickBaseball.cfg"))){
+					bw.write("sfxEnabled="+sfxEnabled+"\n");
+					bw.write("bgmEnabled="+bgmEnabled+"\n");
+					bw.write("infoEnabled="+infoEnabled);
+				}catch(Exception e2){
+					e2.printStackTrace();
+				}
 				requestReturn();
 			}
 		});

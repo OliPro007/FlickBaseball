@@ -13,7 +13,8 @@ import javax.swing.border.EmptyBorder;
  * Classe d'entrée de l'application.
  * 
  * @author Olivier St-Jean
- * @version 05-05-2015
+ * @since 9-02-2015
+ * @version 04-05-2015
  */
 public class App05FlickBaseball extends JFrame {
 	

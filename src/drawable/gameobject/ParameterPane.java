@@ -64,7 +64,7 @@ public class ParameterPane extends JPanel{
 	private double lambda = 60; //longueur d'onde de la balle sinusoidale
 	private double T = 3; //Période de la balle sinusoidale
 	private double amplitude = maxAmplitude*0.5;
-	private double mass = 0.500; //masse de la balle en kilogrammes
+	private double mass = 0.200; //masse de la balle en kilogrammes
 	private double chargeSign = 1;
 	private double charge = 4*Math.pow(10, -3);
 	private double otherSpdX = NormalBall.MAX_SPEED_X/2;
@@ -118,6 +118,7 @@ public class ParameterPane extends JPanel{
 		int speedPaneY = 2*SPACING;
 		int labelX = FIRST_POS + ThrowController.SCREEN_SIZE;
 		Font lblFont = new Font("Time New Roman", Font.PLAIN, 30);
+		Font sinusFont = new Font("Time New Roman", Font.PLAIN, 25);
 		Color textColor = Color.WHITE;
 		Color bgc = new Color(0,0,0,150);
 		
@@ -150,22 +151,22 @@ public class ParameterPane extends JPanel{
 		lblLambda.setBounds(FIRST_POS+SLIDER_WIDTH, FIRST_POS, LABEL_WIDTH, LABEL_HEIGHT);
 		lblLambda.setBorder(LineBorder.createGrayLineBorder());
 		lblLambda.setForeground(textColor);
-		lblLambda.setText("lam: " + lambda + " m");
-		lblLambda.setFont(lblFont);
+		lblLambda.setText("lambda: " + lambda + " m");
+		lblLambda.setFont(sinusFont);
 		
 		lblPeriod = new JLabel("", SwingConstants.CENTER);
 		lblPeriod.setBounds(FIRST_POS+SLIDER_WIDTH, sldPeriodY, LABEL_WIDTH, LABEL_HEIGHT);
 		lblPeriod.setBorder(LineBorder.createGrayLineBorder());
 		lblPeriod.setForeground(textColor);
-		lblPeriod.setText("T: " + T + " s");
-		lblPeriod.setFont(lblFont);
+		lblPeriod.setText("période: " + T + " s");
+		lblPeriod.setFont(sinusFont);
 		
 		lblAmplitude = new JLabel("", SwingConstants.CENTER);
 		lblAmplitude.setBounds(FIRST_POS+SLIDER_WIDTH, sldAmplitudeY, LABEL_WIDTH, LABEL_HEIGHT);
 		lblAmplitude.setBorder(LineBorder.createGrayLineBorder());
 		lblAmplitude.setForeground(textColor);
-		lblAmplitude.setText(amplitude+" m");
-		lblAmplitude.setFont(lblFont);
+		lblAmplitude.setText("amplitude:" + amplitude+" m");
+		lblAmplitude.setFont(sinusFont);
 		
 		
 		sldLambda = new JSlider();
@@ -179,7 +180,7 @@ public class ParameterPane extends JPanel{
 		sldLambda.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				lambda = sldLambda.getValue();
-				lblLambda.setText("lam: " + lambda + " m");
+				lblLambda.setText("lambda: " + lambda + " m");
 			}
 		});
 		
@@ -194,7 +195,7 @@ public class ParameterPane extends JPanel{
 		sldPeriod.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				T = sldPeriod.getValue();
-				lblPeriod.setText("T: " + T + " s");
+				lblPeriod.setText("période: " + T + " s");
 			}
 		});
 		
@@ -209,7 +210,7 @@ public class ParameterPane extends JPanel{
 		sldAmplitude.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				amplitude = sldAmplitude.getValue();
-				lblAmplitude.setText(amplitude+" m");
+				lblAmplitude.setText("amplitude:" + amplitude+" m");
 			}
 		});
 		
@@ -411,10 +412,10 @@ public class ParameterPane extends JPanel{
 				lblIntensityX.setText("X: %" + String.format("%.2f", intensityX*100));
 				
 				otherSpdX = NormalBall.MAX_SPEED_X*intensityX;
-				lblNormalSpdX.setText(otherSpdX+"m/s en X");
+				lblNormalSpdX.setText(String.format("%.2f", otherSpdX)+"m/s en X");
 				
 				fastSpdX = FastBall.MAX_SPEED_X*intensityX;
-				lblFastSpdX.setText(fastSpdX+"m/s en X");
+				lblFastSpdX.setText(String.format("%.2f", fastSpdX)+"m/s en X");
 			}
 			
 			public void setSpeedY(double intensity) {
@@ -422,10 +423,10 @@ public class ParameterPane extends JPanel{
 				lblIntensityY.setText("Y: %" + String.format("%.2f", intensityY*100));
 				
 				otherSpdY = NormalBall.MAX_SPEED_Y*intensityY;
-				lblNormalSpdY.setText(otherSpdY+"m/s en Y");
+				lblNormalSpdY.setText(String.format("%.2f", otherSpdY)+"m/s en Y");
 				
 				fastSpdY = FastBall.MAX_SPEED_Y*intensityY;
-				lblFastSpdY.setText(fastSpdY+"m/s en Y");
+				lblFastSpdY.setText(String.format("%.2f", fastSpdY)+"m/s en Y");
 			}
 		});
 		
