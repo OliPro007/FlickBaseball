@@ -1,18 +1,4 @@
-/.settings/
 /bin/
-/documents/
-/res/
-/src/
-
-*.class
-*.sav
-*.docx
-*.txt
-.classpath
-.project
-
-LICENCE
-README.md
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
